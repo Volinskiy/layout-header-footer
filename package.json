@@ -1,0 +1,22 @@
+{
+  "name": "notice-app-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "encore dev",
+    "build:dev-watch": "encore dev --watch",
+    "build:production": "export BUILD_MODE=production && encore production",
+    "dev": "export NODE_DEV_SERVER=true && webpack-dev-server"
+  },
+  "author": "Borzov Sergey",
+  "license": "ISC",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.31.0",
+    "core-js": "^3.6.5",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "svg-sprite-loader": "^5.0.0"
+  },
+  "dependencies": {}
+}
