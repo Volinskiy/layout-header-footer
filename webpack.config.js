@@ -72,6 +72,11 @@ Encore
 
     .addPlugin(new SpriteLoaderPlugin({}))
 
+    .autoProvideVariables({
+        $: 'jquery',
+        jQuery: 'jquery'
+    })
+
     .configureBabel(babelConf => {
             babelConf.presets = [['@babel/preset-env', {
                 useBuiltIns: 'usage',

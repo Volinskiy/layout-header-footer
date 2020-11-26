@@ -1,0 +1,23 @@
+@import '../../common/variables.less';
+
+.region {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &__sity-selector {
+    border: none;
+    outline: none;
+    background-color: initial;
+    cursor: pointer;
+    text-decoration: underline;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    &:hover, &:focus   {
+      border: 1px dotted black;
+    }
+  }
+
+}

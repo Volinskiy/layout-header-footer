@@ -5,15 +5,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Notice app</title>
 	<link rel="stylesheet" href="/assets/build/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/assets/build/css/main.css" type="text/css">
+	<link rel="stylesheet" href="/assets/build/css/mainpage.css" type="text/css">
 </head>
 <body>
 	<header class="header">
 			<div class="header__top-panel top-panel">
 				<div class="top-panel__container wrapper">
-					<section class="top-panel__contacts contacts"></section>
-					<section class="top-panel__region region"></section>
-					<section class="top-panel__logo logo"></section>
+					<section class="top-panel__contacts contacts-section">
+						<p class="contacts-section__mode-work">Круглосуточно</p>
+						<a href="tel:88007072320" class="contacts-section__fone-number">
+							8 (800) 707-23-20
+						</a>
+						<a href="mailto:manager@dialweb.ru" class="contacts-section__email">
+							<span>Написать нам</span>
+						</a>
+					</section>
+					<section class="top-panel__region region">
+						<span>Ваш регион доставки:</span>
+						<form class="region__sity-form" id="region-form-select-city" action="#" method="post" name="form1">
+							<select class="region__sity-selector" name="list1">
+							 <option><span>Тула</span></option>
+							 <option>Орёл</option>
+							 <option>Липецк</option>
+							 <option>Тверь</option>
+							 <option>Рязань</option>
+							 <option>Смоленск</option>
+							</select>
+						 </form>
+					</section>
+					<section class="top-panel__logo logo">
+						<svg class="logo__svg" width="175" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)" fill="#009B77">
+								<path
+									d="M163.755.813c-1.936 0-3.649.37-5.287 1.035-1.266.517-2.83 1.478-4.617 2.808v-3.4h-5.436V34h5.436V15.374c0-2.735.894-5.026 2.681-6.948 1.787-1.848 4.021-2.809 6.702-2.809 2.755 0 4.989.961 6.777 2.883l4.617-2.513c-2.756-3.4-6.405-5.1-10.873-5.174zM130.319.37c-4.542 0-8.415 1.626-11.766 4.878-3.276 3.252-4.915 7.243-4.915 11.974 0 4.73 1.639 8.647 4.915 11.9C121.83 32.374 125.702 34 130.245 34c4.542 0 8.489-1.626 11.84-4.804 1.043-1.035 1.936-2.07 2.606-3.253l-3.648-3.547a12.649 12.649 0 01-2.383 3.252c-2.383 2.291-5.139 3.4-8.415 3.4-3.202 0-5.958-1.109-8.341-3.4-2.308-2.291-3.5-5.1-3.5-8.426 0-3.326 1.192-6.209 3.5-8.5 2.309-2.366 5.139-3.474 8.415-3.474 3.277 0 6.032 1.182 8.415 3.548 1.787 1.7 2.83 3.77 3.277 5.987-6.405 0-12.809 0-19.213-.074v4.213c8.042 0 16.159 0 24.202.074.447-5.026-1.191-9.979-4.915-13.6-3.276-3.4-7.223-5.026-11.766-5.026zM98.075.74c-2.309 0-4.618.59-6.852 1.773-2.234 1.183-4.095 2.735-5.51 4.657-1.266-1.922-2.904-3.548-4.99-4.657C78.638 1.33 76.404.739 73.947.739c-1.936 0-3.65.37-5.287 1.035-1.266.517-2.83 1.478-4.617 2.809v-3.4h-5.437l-.074 32.67h5.436V15.225c0-2.735.894-5.026 2.68-6.948C68.437 6.43 70.67 5.47 73.427 5.47c2.755 0 4.989.96 6.702 2.808 1.787 1.848 2.606 4.213 2.606 6.874v18.626h5.213l.074-18.774c0-2.66.894-4.952 2.756-6.8 1.861-1.847 4.095-2.734 6.85-2.734 2.682 0 4.916.96 6.703 2.808 1.787 1.848 2.606 4.213 2.606 6.874v18.626h5.287l.075-18.848c0-3.917-1.341-7.317-4.096-10.126-2.83-2.66-6.181-4.065-10.127-4.065zM48.851 25.648c-2.383 2.291-5.138 3.4-8.415 3.4-3.202 0-5.957-1.109-8.34-3.4-2.309-2.291-3.5-5.1-3.5-8.426 0-3.326 1.191-6.209 3.5-8.5 2.308-2.366 5.138-3.474 8.415-3.474 3.276 0 6.032 1.182 8.414 3.548 2.384 2.365 3.575 5.174 3.5 8.5 0 3.326-1.191 6.134-3.574 8.352zM40.511.37c-4.543 0-8.415 1.626-11.766 4.878C25.468 8.5 23.83 12.49 23.83 17.222c0 4.73 1.638 8.647 4.915 11.9C32.02 32.374 35.894 34 40.436 34c4.543 0 8.49-1.626 11.84-4.804 3.352-3.253 4.99-7.17 4.99-11.9s-1.638-8.722-4.99-11.974C49 1.996 45.054.37 40.512.37zM15.34.517c-1.936 0-3.649.37-5.287 1.035-1.266.518-2.83 1.478-4.617 2.809V.96H0v32.743h5.436V15.078c0-2.735.894-5.026 2.681-6.948 1.787-1.847 4.021-2.808 6.702-2.808 2.755 0 4.99.96 6.777 2.882l4.617-2.513c-2.756-3.4-6.405-5.1-10.873-5.174z" />
+							</g>
+							<defs>
+								<clipPath id="clip0">
+									<path fill="#fff" d="M0 0h175v34H0z" />
+								</clipPath>
+							</defs>
+						</svg>
+						<p class="logo__slogan">Комфортная обувь для жизни</p>
+					</section>
 					<form action="#" class="top-panel__search search-form">
 						<input type="text" class="search-form__search-string">
 					</form>
@@ -33,7 +66,7 @@
 
 	</footer>
 	<script src="/assets/build/js/common.js"></script>
-	<script src="/assets/build/js/main.js"></script>
+	<script src="/assets/build/js/mainpage.js"></script>
 </body>
 
 </html>

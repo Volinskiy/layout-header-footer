@@ -18,5 +18,7 @@
     "less-loader": "^7.0.1",
     "svg-sprite-loader": "^5.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }

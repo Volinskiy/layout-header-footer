@@ -1,5 +1,24 @@
+@import '../../common/common.less';
+@import '../../common/variables.less';
 
 .wrapper {
-    max-width: 600px;
     margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+
+    @media @min-375 {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    @media @min-768 {
+        padding: initial;
+        width: 740px;
+    }
+    @media @min-1024 {
+        width: 970px;
+    }
+    @media @min-1600 {
+        width: 1490px;
+    }
+
 }

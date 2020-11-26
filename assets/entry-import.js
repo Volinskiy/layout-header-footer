@@ -3,6 +3,6 @@
 // Имена файлов точек-входа. Путь к файлам в переменной
 // pathToEntries  webpack.config
 module.exports = {
-    main: 'main.js',
+    mainpage: 'main-page.js',
     common: 'common.js'
 };
