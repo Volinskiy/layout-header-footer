@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 0;
+  text-align: center;
   
   
   @media @min-1024 {
@@ -17,12 +18,21 @@
   &__mode-work {
     font-weight: normal;
     font-size: 12px;
+
+    @media @min-768 {
+      width: initial;
+      order: initial;
+    }
   }
   
   &__fone-number {
     font-weight: bold;
     font-size: 12px;
     
+    @media @min-768 {
+      width: initial;
+      order: initial;
+    }
     @media @min-1024 {
       font-size: 14px;
     }
@@ -33,6 +43,10 @@
   
   &__email {
   
+    @media @min-768 {
+      width: initial;
+      order: initial;
+    }
     span {
       text-decoration: underline;
     }
