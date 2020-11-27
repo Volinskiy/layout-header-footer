@@ -47,8 +47,17 @@
 						</svg>
 						<p class="logo__slogan">Комфортная обувь для жизни</p>
 					</section>
-					<form action="#" class="top-panel__search search-form">
-						<input type="text" class="search-form__search-string">
+					<form action="#" class="top-panel__search-form search-form">
+						<label class="search-form__label"
+									 for="SearchString">
+						</label>
+						<input class="search-form__search-string"
+									 type="text"
+									 id="SearchString"
+									 placeholder="Поиск">
+						<button class="search-form__loop"
+										type="submit">
+						</button>
 					</form>
 					<section class="top-panel__user-controls user-controls">
 						<button class="user-controls__account"></button>
@@ -58,6 +67,7 @@
 					</section>
 				</div>
 			</div>
+			<div class="header__menu-panel menu-panel"></div>
 	</header>
 	<main class="main">
 		

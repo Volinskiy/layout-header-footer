@@ -1,0 +1,57 @@
+@import '../../common/variables.less';
+
+.search-form {
+  @padding: 20px;
+
+
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: @padding;
+  background: #F2F2F2;
+  border-radius: 2px;
+
+  
+  &__search-string {
+    @controls-color: #B4B4B4;
+
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid @controls-color;
+    }
+
+    &::placeholder {
+      color: @controls-color;
+
+    }
+  }
+  
+  &__label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  &__loop {
+    @size: 20px;
+
+    width: @size;
+    height: @size;
+    margin-left: @padding;
+    background: repeat url('./img/loop.svg') ;
+
+  }
+}
