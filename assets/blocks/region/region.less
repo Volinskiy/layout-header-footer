@@ -5,6 +5,21 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__description {
+    display: none;
+
+    @media @min-1024 {
+      display: initial;
+    }
+  }
 
   &__sity-selector {
     padding: 3px;
@@ -15,6 +30,12 @@
     text-decoration: underline;
     border: 1px solid transparent;
     border-radius: 5px;
+    font-size: 10px;
+
+    
+    @media @min-1024 {
+      font-size: 12px;
+    }
 
     &:hover, &:focus   {
       border: 1px dotted black;

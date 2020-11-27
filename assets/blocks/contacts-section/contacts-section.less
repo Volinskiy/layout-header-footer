@@ -4,7 +4,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  padding: 10px 0;
+  
+  
+  @media @min-1024 {
+    padding: 7px 0;
+  }
+  @media @min-1360 {
+    padding: 4px 0;
+  }
 
   &__mode-work {
     font-weight: normal;
@@ -13,8 +21,11 @@
   
   &__fone-number {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     
+    @media @min-1024 {
+      font-size: 14px;
+    }
     @media @min-1360 {
       font-size: 16px;
     }

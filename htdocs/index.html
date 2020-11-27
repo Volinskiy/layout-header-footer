@@ -11,7 +11,7 @@
 	<header class="header">
 			<div class="header__top-panel top-panel">
 				<div class="top-panel__container wrapper">
-					<section class="top-panel__contacts contacts-section">
+					<section class="top-panel__contacts-section contacts-section">
 						<p class="contacts-section__mode-work">Круглосуточно</p>
 						<a href="tel:88007072320" class="contacts-section__fone-number">
 							8 (800) 707-23-20
@@ -21,20 +21,22 @@
 						</a>
 					</section>
 					<section class="top-panel__region region">
-						<span>Ваш регион доставки:</span>
-						<form class="region__sity-form" id="region-form-select-city" action="#" method="post" name="form1">
-							<select class="region__sity-selector" name="list1">
-							 <option><span>Тула</span></option>
-							 <option>Орёл</option>
-							 <option>Липецк</option>
-							 <option>Тверь</option>
-							 <option>Рязань</option>
-							 <option>Смоленск</option>
-							</select>
-						 </form>
+						<div class="region__container">
+							<span class="region__description">Ваш регион доставки:</span>
+							<form class="region__sity-form" id="region-form-select-city" action="#" method="post" name="form1">
+								<select class="region__sity-selector" name="list1">
+								 <option><span>Тула</span></option>
+								 <option>Орёл</option>
+								 <option>Липецк</option>
+								 <option>Тверь</option>
+								 <option>Рязань</option>
+								 <option>Смоленск</option>
+								</select>
+							 </form>
+						</div>
 					</section>
 					<section class="top-panel__logo logo">
-						<a class="logo__svg-box">
+						<a class="logo__container">
 							<svg class="logo__svg" viewBox="0 0 175 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g clip-path="url(#clip0)" fill="#009B77">
 									<path
@@ -46,8 +48,8 @@
 									</clipPath>
 								</defs>
 							</svg>
+							<p class="logo__slogan">Комфортная обувь для жизни</p>
 						</a>
-						<p class="logo__slogan">Комфортная обувь для жизни</p>
 					</section>
 					<form action="#" class="top-panel__search-form search-form">
 						<label class="search-form__label"
