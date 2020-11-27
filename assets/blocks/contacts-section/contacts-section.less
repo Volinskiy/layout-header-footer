@@ -4,10 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 0;
   text-align: center;
+  font-size: 18px;
   
   
+  @media @min-768 {
+    padding: 10px 0;
+  }
   @media @min-1024 {
     padding: 7px 0;
   }
@@ -17,21 +20,19 @@
 
   &__mode-work {
     font-weight: normal;
-    font-size: 12px;
-
+    font-size: inherit;
+    
     @media @min-768 {
-      width: initial;
-      order: initial;
+      font-size: 12px;
     }
   }
   
   &__fone-number {
     font-weight: bold;
-    font-size: 12px;
+    font-size: inherit;
     
     @media @min-768 {
-      width: initial;
-      order: initial;
+      font-size: 12px;
     }
     @media @min-1024 {
       font-size: 14px;
@@ -42,6 +43,7 @@
   }
   
   &__email {
+    font-size: inherit;
   
     @media @min-768 {
       width: initial;

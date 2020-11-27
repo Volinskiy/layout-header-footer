@@ -1,3 +1,5 @@
+@import '../../common/variables.less';
+
 .footer {
     background: #F0F9F7;
 
@@ -7,6 +9,13 @@
         line-height: 24px;
         text-transform: uppercase;
         margin-bottom: 13px;
+        
+        @media @min-768 {
+            font-size: 12px;
+        }
+        @media @min-1024 {
+            font-size: 14px;
+        }
     }
 
     h6 {
@@ -14,6 +23,13 @@
         line-height: 18px;
         font-weight: 600;
         margin-bottom: 15px;
+        
+        @media @min-768 {
+            font-size: 10px;
+        }
+        @media @min-1024 {
+            font-size: 12px;
+        }
     }
 
     ul {
@@ -27,6 +43,13 @@
             font-size: 13px;
             text-decoration: none;
 
+            @media @min-768 {
+                font-size: 10px;
+            }
+            @media @min-1024 {
+                font-size: 13px;
+            }
+
             &:hover,
             &:focus {
                 text-decoration: underline;
@@ -36,12 +59,36 @@
 
     &__container {
         display: flex;
+        // flex-direction: column;
         padding: 77px 0 70px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+
+        @media @min-768 {
+            // flex-direction: row;
+          }
     }
 
     &__col {
         flex-shrink: 0;
-        width: 17.15%;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        
+        @media @min-375 {
+            width: 45%;
+            text-align: initial;
+        }
+        @media @min-768 {
+            width: 30%;
+            margin-top: 30px;
+        }
+        @media @min-1024 {
+            width: 17.15%;
+            flex-wrap: nowrap;
+            margin-top: 0;
+        }
     }
 
     &__caption {
@@ -55,6 +102,13 @@
         font-size: 16px;
         line-height: 28px;
         font-weight: 700;
+
+        @media @min-768 {
+            font-size: 12px;
+        }
+        @media @min-1024 {
+            font-size: 16px;
+        }
     }
 
     &__email {
@@ -93,6 +147,11 @@
 
         &-icons {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            @media @min-768 {
+              }
 
             a {
                 display: flex;
@@ -118,12 +177,11 @@
         &:before {
             content: '';
             display: block;
-            background-image: url('./img/logo_pay.png');
-            height: 48px;
-            width: 239px;
-            position: relative;
-            left: -24px;
-            top: 2px;
+            background: no-repeat url('./img/logo_pay.png');
+            background-size: contain;
+            background-position: center center;
+            height: 30px;
+            width: 100%;
             margin-bottom: 18px;
         }
     }

@@ -24,9 +24,13 @@
   &__contacts-section {
     order: 3;
     width: 100%;
+    margin: 30px 20px 0 20px;
+    height: 80px;
 
     @media @min-768 {
+      height: initial;
       width: initial;
+      margin: 0;
       order: initial;
     }
   }
@@ -49,7 +53,7 @@
   }
 
   &__logo {
-    max-width: 170px;
+    max-width: 190px;
     order: 1;
     
     @media @min-768 {
@@ -72,13 +76,14 @@
     flex-grow: 1;
     flex-shrink: 1;
     order: 5;
+    margin: 30px 0 0 0;
     
     @media @min-768 {
       max-width: 220px;
       order: initial;
+      margin: 7px 0 7px 0;
     }
     @media @min-1024 {
-      margin: 7px 0 7px 0;
     }
     @media @min-1360 {
       width: 1340px;
@@ -88,11 +93,12 @@
   &__user-controls {
     order: 6;
     width: 100%;
-
-    
+    margin: 30px 0 0 0;
+  
     @media @min-768 {
       order: initial;
       width: initial;
+      margin: 0;
     }
   }
   

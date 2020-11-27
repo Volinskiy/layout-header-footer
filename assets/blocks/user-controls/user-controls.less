@@ -3,30 +3,43 @@
 .user-controls {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  
+  @media @min-768 {
+    justify-content: space-between;
+  }
+
 
   &__account {
-    width: 16px;
-    height: 17px;
-    margin-right: 20px;
+    width: 22px;
+    height: 22px;
+    margin-right: 24px;
     background: no-repeat url('./img/account.svg') center center;
     
+    @media @min-768 {
+      width: 16px;
+      height: 17px;
+      margin-right: 20px;
+    }
     @media @min-1024 {
       width: 20px;
       height: 20px;
-      margin-right: 26px;
     }
     @media @min-1360 {
       margin-right: 36px;
     }
   }
   &__chart {
-    width: 15px;
-    height: 16px;
-    margin-right: 16px;
+    width: 21px;
+    height: 20px;
+    margin-right: 20px;
     background: no-repeat url('./img/graph.svg') center center;
     
+    @media @min-768 {
+      width: 15px;
+      height: 16px;
+    }
     @media @min-1024 {
       width: 19px;
       height: 18px;
@@ -37,28 +50,33 @@
     }
   }
   &__liked {
-    width: 29px;
-    height: 22px;
+    width: 35px;
+    height: 27px;
     background: no-repeat url('./img/Vector.svg') center center;
-    margin-right: 11px;
     
+    @media @min-768 {
+      width: 29px;
+      height: 22px;
+      margin-right: 11px;
+    }
     @media @min-1024 {
       width: 33px;
       height: 25px;
-      margin-right: 15px;
     }
     @media @min-1360 {
       margin-right: 20px;
     }
   }
   &__basket {
-    width: 24px;
-    height: 22px;
+    width: 30px;
+    height: 27px;
     background: no-repeat url('./img/basket.svg') center center;
-
+    
+    @media @min-768 {
+      width: 24px;
+      height: 22px;
+    }
     @media @min-1024 {
-      width: 28px;
-      height: 25px;
     }
   }
 
