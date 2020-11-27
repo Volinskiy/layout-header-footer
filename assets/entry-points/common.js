@@ -6,5 +6,6 @@ import '../blocks/contacts-section/contacts-section';
 import '../blocks/body/body';
 import '../blocks/region/region';
 import '../blocks/logo/logo';
+import '../blocks/footer/footer';
 import '../blocks/search-form/search-form';
 import '../blocks/user-controls/user-controls';

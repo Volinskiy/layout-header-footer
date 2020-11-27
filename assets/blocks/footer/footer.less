@@ -1,0 +1,156 @@
+.footer {
+    background: #F0F9F7;
+
+    h5 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 13px;
+    }
+
+    h6 {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        line-height: 34px;
+        list-style: none;
+
+        padding: 0;
+        margin: 0;
+
+        a {
+            font-size: 13px;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        padding: 77px 0 70px;
+    }
+
+    &__col {
+        flex-shrink: 0;
+        width: 17.15%;
+    }
+
+    &__caption {
+        color: #B4B4B4;
+        font-size: 12px;
+        margin-top: 23px;
+        margin-bottom: 3px;
+    }
+
+    &__phone {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 700;
+    }
+
+    &__email {
+        font-size: 12px;
+        line-height: 28px;
+        font-weight: 600;
+        text-decoration: underline;
+
+        margin-bottom: 24px;
+    }
+
+    &__message {
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration: underline;
+
+        margin-bottom: 34px;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            background-image: url('./img/mail.svg');
+            margin-right: 10px;
+            height: 10px;
+            width: 14px;
+        }
+    }
+
+    &__phone,
+    &__email,
+    &__message {
+        display: block;
+    }
+
+    &__social {
+
+        &-icons {
+            display: flex;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #DDF1ED;
+                border-radius: 50%;
+                height: 34px;
+                width: 34px;
+
+                & + a {
+                    margin-left: 8px;
+                }
+            }
+
+        }
+    }
+
+    &__pay {
+        font-size: 12px;
+        line-height: 18px;
+
+        &:before {
+            content: '';
+            display: block;
+            background-image: url('./img/logo_pay.png');
+            height: 48px;
+            width: 239px;
+            position: relative;
+            left: -24px;
+            top: 2px;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__policy {
+        display: block;
+        text-decoration: underline;
+        margin-top: 63px;
+    }
+
+    &__bottom {
+        background: #009B77;
+        padding: 17px 0 12px;
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-item {
+            color: #fff;
+            font-size: 13px;
+            line-height: 34px;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
