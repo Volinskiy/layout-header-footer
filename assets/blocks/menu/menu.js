@@ -8,6 +8,7 @@ $(window).on('load', function() {
       menuBurgerButton = $('#menuBurgerButton'),
       body = $('body');
 
+
   buttonCloseMenu.on('click', function(){
     menuNavigation.removeClass('opened');
     body.removeClass('mobile-menu-opened');
