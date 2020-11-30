@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "encore dev",
+    // "build:dev": "encore dev",
     "build:dev-watch": "encore dev --watch",
     "build:production": "export BUILD_MODE=production && encore production",
+    "build:dev": "export BUILD_MODE=dev && encore dev",
     "dev": "export NODE_DEV_SERVER=true && webpack-dev-server"
   },
   "author": "Borzov Sergey",
