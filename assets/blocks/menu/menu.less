@@ -1,0 +1,127 @@
+@import '../../common/variables.less';
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  
+  @media @min-768 {
+    display: initial;
+    padding-top: 10px;
+  }
+  
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    @media @min-768 {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    min-height: 60px;
+    
+    @media @min-768 {
+      flex-grow: 1;
+      min-height: initial;
+    }
+  }
+  
+  &__item-link {
+    @border: ~'2px solid transparent';
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-top: @border;
+    border-bottom: @border;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    @media @min-768 {
+      font-size: 10px;
+    }
+    @media @min-1024 {
+      font-size: 12px;
+    }
+    @media @min-1360 {
+      font-size: 14px;
+    }
+
+    &:hover {
+      border-top-color: black;
+    }
+  }
+
+  &__button-close-menu {
+    @size: 35px;
+
+    align-self: flex-end;
+    flex-shrink: 0;
+    display: block;
+    position: relative;
+    width: @size;
+    height: @size;
+    margin-right: 15px;
+  
+    
+    &:after,
+    &:before {
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      background: #515758;
+      margin: 0 auto;
+      left: 0;
+    }
+  
+    & span{
+        top: 11px;
+    }
+  
+    &:after, &:before{
+        content: '';
+    }
+  
+    &:after{
+        bottom: 3px;
+    }
+  
+    &:before{
+        top: 3px;
+    }
+   
+    & span {
+      opacity:0; 
+    }
+   
+    &:before {
+        transform: rotate(45deg);
+        top: 17px;
+    }
+   
+    &:after {
+        transform: rotate(-45deg);
+        bottom: 16px;
+    }
+
+    @media @min-768 {
+      display: none;
+    }
+  }
+}

@@ -9,3 +9,7 @@ import '../blocks/logo/logo';
 import '../blocks/footer/footer';
 import '../blocks/search-form/search-form';
 import '../blocks/user-controls/user-controls';
+import '../blocks/menu-panel/menu-panel';
+import '../blocks/menu/menu';
+import '../blocks/menu-burger-button/menu-burger-button';
+import '../blocks/button/button';

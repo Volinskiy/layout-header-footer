@@ -14,3 +14,11 @@
 	font-weight: 700;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat-semibold.woff2') format('woff2'),
+					url('./fonts/Montserrat-semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}

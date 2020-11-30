@@ -1,0 +1,37 @@
+@import '../../common/variables.less';
+
+.menu-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__container {
+    height: 100%;    
+  }
+  
+  &__menu {
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    background-color: white;
+    z-index: 1000;
+    transition: all 0.4s ease;
+    
+    @media @min-768 {
+      position: initial;
+      height: 100%;
+      width: 100%;
+      z-index: initial;
+      background-color: transparent
+    }
+    
+    &.opened {
+      left: 0;
+    }
+  }
+
+}

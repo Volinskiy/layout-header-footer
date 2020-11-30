@@ -15,8 +15,7 @@
     "@symfony/webpack-encore": "^0.31.0",
     "core-js": "^3.6.5",
     "less": "^3.12.2",
-    "less-loader": "6.2.0",
-    "svg-sprite-loader": "^5.0.0"
+    "less-loader": "6.2.0"
   },
   "dependencies": {
     "jquery": "^3.5.1"

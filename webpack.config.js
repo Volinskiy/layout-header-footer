@@ -1,7 +1,7 @@
 
 const Encore = require('@symfony/webpack-encore'),
       path = require('path'),
-      SpriteLoaderPlugin = require('svg-sprite-loader/plugin'),
+    //   SpriteLoaderPlugin = require('svg-sprite-loader/plugin'),
 
       BUILD_MODE = process.env.BUILD_MODE || 'dev',
       IS_DEV_SERVER = process.env.NODE_DEV_SERVER || false,
@@ -44,33 +44,33 @@ Encore
       .disableImagesLoader()
 
       .addRule({
-          test: /\.(png|jpg|jpeg|gif|ico|webp)$/,
+          test: /\.(png|jpg|jpeg|gif|ico|webp|svg)$/,
           loader: 'file-loader',
           options: {
                 name: 'img/[name]' + dateTimeStamp + '.[ext]'
           }
       })
 
-      .addRule({
-          test: /\.svg$/,
-          loader: 'file-loader',
-          options: {
-                emitFile: false,
-                name: 'img/sprite' + dateTimeStamp + '.svg#[name]-usage'
-          }
-      })
+    //   .addRule({
+    //       test: /\.svg$/,
+    //       loader: 'file-loader',
+    //       options: {
+    //             emitFile: false,
+    //             name: 'img/sprite' + dateTimeStamp + '.svg#[name]-usage'
+    //       }
+    //   })
     
     // Плагин для автоматического создания svg-спрайтов, найденных в файлах сборки
-    .addLoader({
-        test: /\.svg$/,
-        loader: 'svg-sprite-loader',
-        options: {
-            extract: true,
-            spriteFilename: 'img/sprite' + dateTimeStamp + '.svg'
-        }
-    })
+    // .addLoader({
+    //     test: /\.svg$/,
+    //     loader: 'svg-sprite-loader',
+    //     options: {
+    //         extract: true,
+    //         spriteFilename: 'img/sprite' + dateTimeStamp + '.svg'
+    //     }
+    // })
 
-    .addPlugin(new SpriteLoaderPlugin({}))
+    // .addPlugin(new SpriteLoaderPlugin({}))
 
     .autoProvideVariables({
         $: 'jquery',

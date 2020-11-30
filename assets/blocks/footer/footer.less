@@ -43,13 +43,6 @@
             font-size: 13px;
             text-decoration: none;
 
-            @media @min-768 {
-                font-size: 10px;
-            }
-            @media @min-1024 {
-                font-size: 13px;
-            }
-
             &:hover,
             &:focus {
                 text-decoration: underline;
@@ -59,17 +52,24 @@
 
     &__container {
         display: flex;
-        // flex-direction: column;
-        padding: 77px 0 70px;
-        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: 47px;
+        padding-bottom: 40px;
         justify-content: space-between;
         
+        
+        @media @min-400 {
+            flex-direction: row;
+            flex-wrap: wrap;
 
+        }
         @media @min-768 {
             // flex-direction: row;
         }
         @media @min-1024 {
             flex-wrap: nowrap;
+            padding-top: 77px;
+            padding-bottom: 70px;
         }
     }
 
@@ -79,7 +79,7 @@
         margin-top: 20px;
         text-align: center;
         
-        @media @min-375 {
+        @media @min-400 {
             width: 45%;
             text-align: initial;
         }
@@ -133,9 +133,9 @@
         &:before {
             content: '';
             display: inline-block;
-            background-image: url('./img/mail.svg');
+            background: no-repeat url('/assets/static/mail.svg') center center;
             margin-right: 10px;
-            height: 10px;
+            height: 11px;
             width: 14px;
         }
     }
@@ -180,12 +180,15 @@
         &:before {
             content: '';
             display: block;
-            background: no-repeat url('./img/logo_pay.png');
+            background: no-repeat url('/assets/static/logo_pay.png') center center;
             background-size: contain;
-            background-position: center center;
             height: 30px;
             width: 100%;
             margin-bottom: 18px;
+
+            @media @min-400 {
+                background-position: left center;
+            }
         }
     }
 

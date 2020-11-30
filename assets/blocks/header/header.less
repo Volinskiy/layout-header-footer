@@ -1,9 +1,19 @@
 @import '../../common/variables.less';
 
 .header {
+  box-shadow: 0 17px 15px rgba(0,0,0,.1);
+
+  @media @min-768 {
+    box-shadow: none;
+  }
 
   &__menu-panel {
-    height: 74px;
+    height: 7px;
     background: rgba(0, 155, 119, 0.06);
+    
+    @media @min-768 {
+      height: 74px;
+      box-shadow: none;
+    } 
   }
 }

@@ -1,0 +1,56 @@
+@import '../../common/variables.less';
+
+.menu-burger-button {
+  @size: 24px;
+
+  position: relative;
+  width: @size;
+  height: @size;
+  display: block;
+  margin-left: 10px;
+
+
+  & > span,
+  &:after,
+  &:before {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  & span{
+      top: 11px;
+  }
+
+  &:after, &:before{
+      content: '';
+  }
+
+  &:after{
+      bottom: 3px;
+  }
+
+  &:before{
+      top: 3px;
+  }
+
+  &.opened span {
+    opacity:0; 
+    transition: 0.5s; 
+  }
+
+  &.opened:before {
+      transform: rotate(45deg);
+      top: 11px;
+      transition: 0.4s;
+  }
+
+  &.opened:after {
+      transform: rotate(-45deg);
+      bottom: 11px;
+      transition: 0.4s;
+  }
+}

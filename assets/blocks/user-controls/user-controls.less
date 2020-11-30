@@ -10,12 +10,16 @@
     justify-content: space-between;
   }
 
+  
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
 
   &__account {
     width: 22px;
     height: 22px;
-    margin-right: 24px;
-    background: no-repeat url('./img/account.svg') center center;
+    // background: no-repeat url('./img/account.svg') center center;
     
     @media @min-768 {
       width: 16px;
@@ -30,15 +34,16 @@
       margin-right: 36px;
     }
   }
+
   &__chart {
     width: 21px;
     height: 20px;
-    margin-right: 20px;
-    background: no-repeat url('./img/graph.svg') center center;
+    // background: no-repeat url('./img/graph.svg') center center;
     
     @media @min-768 {
       width: 15px;
       height: 16px;
+      margin-right: 20px;
     }
     @media @min-1024 {
       width: 19px;
@@ -49,10 +54,12 @@
       margin-right: 30px;
     }
   }
+
+  
   &__liked {
-    width: 35px;
-    height: 27px;
-    background: no-repeat url('./img/Vector.svg') center center;
+    width: 39px;
+    height: 33px;
+    // background: no-repeat url('./img/Vector.svg') center center;
     
     @media @min-768 {
       width: 29px;
@@ -67,10 +74,11 @@
       margin-right: 20px;
     }
   }
+  
   &__basket {
     width: 30px;
     height: 27px;
-    background: no-repeat url('./img/basket.svg') center center;
+    // background: no-repeat url('./img/basket.svg') center center;
     
     @media @min-768 {
       width: 24px;
@@ -80,4 +88,10 @@
     }
   }
 
+  &__menu-burger-button {
+   
+    @media @min-768 {
+      display: none !important;
+    }
+  }
 }
